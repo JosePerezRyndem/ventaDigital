@@ -30,9 +30,9 @@ export class AppComponent {
       password: 'Abc.1234'
     }).subscribe((response) => {
       console.log('connectToken->', response);
-      // this.sistemaService.HomeWhoAmI(response.access_token).subscribe((response) => {
-      //   console.log('HomeWhoAmI->', response);
-      // });
+      this.sistemaService.HomeWhoAmI(response.access_token).subscribe((response) => {
+        console.log('HomeWhoAmI->', response);
+      });
     });
   }
 
